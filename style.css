@@ -1,0 +1,312 @@
+*
+{ margin:0px; padding:0px; }
+
+/* the background color code is for the body of the website, this will be constant throughout. Also, the text color will be black unless stated otherwise*/
+body
+{ background-color: #C8C8C8; color:black; 
+}
+
+
+/*Page- The whole page of the website will have a width of 1000px.
+Header- The background color will be with white, with font size of 40pt and it will be bold, padding 8px is just for the top of the header.
+menu- The menu bar will have a background color, font size of 22pt and padding at the top and bottom.
+Content- Basically, the whole content page throughout the website will have the same background color.
+footer- the footer has the same backgrund color as the menu and also the text will be alligned to the center.
+*/
+.page     {width: 1000px; margin: 0px auto 0px auto; }
+.header   {background-color: white; font-size: 40pt; font-weight: bold; padding: 8px; }
+.menu     {background-color: #909090; font-size: 22pt; padding-top: 5px; padding-bottom: 5px;}
+.content  {background-color: #F0F0F0;  }
+.footer   {background-color: #909090; text-align: center;}
+
+
+
+/* Class menulink is used just for the links on the menu and footer. Text-decoration allows the text line to be plain rather than have it underlined by default, the margin has been configured to set 10px only to the right and its has been padded to the left and right by 5px each*/
+.menulink
+{ text-decoration: none;
+  margin: 0px 10px 0px 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
+
+/* menulink:hover provides an effect whenever the mouse hovers over the menu or footer, it wont underlines it using text-decoration as none and gives it a different colour using background colour. */
+.menulink:hover
+{ text-decoration: none;
+  background-color: #D0D0D0;
+}
+
+
+
+
+/* Class productlink is used for all link on the content of the webpage except for the menu and footer*/
+.productlink
+{ text-decoration: none;
+}
+
+
+
+/* productlink:hover text-decoration makes the link to be underlined whenever the mouse hovers over it */
+.productlink:hover
+{  text-decoration: underline;
+
+}
+
+
+
+/*h1 is used for the headers on the home, product and services, and news page. Its is used for all the subtitles. Its is alligned to the center with 24pt as font size*/
+h1
+{ font-size: 24pt; text-align:center;
+}
+
+
+
+/* h2 is used for the sub-headings across each page on the webite, the text is set to black and font size as 20pt */
+h2
+{ color: black; font-size:20pt;
+}
+
+
+
+/* h3 is only used for the subheadings on the home page with font size 24pt and font color as blue */
+h3
+{ font-size: 24pt; color: blue;
+}
+
+
+
+/* h5 is used for the second sub-headings on the news page, with font size as 17pt and a black bold text */
+h5
+{
+   font-size:17pt; font-weight: bold; color: black;
+}
+
+
+
+/* P which is for paragraph is used throughout the website. The font size and family has been set as 12pt and arial respectively */
+p
+{ font-size:12pt; font-family:arial;
+}
+
+
+
+/* ul which is for unordered list has been set as the same with <p> to maintain the same text format in the website */
+ul
+{ font-size:12pt; font-family:arial;
+}
+
+
+
+/*Below is the css for the table in the about us page*/
+/* using class maintable, the table will have no borders, no spacing, a margin of 25px at the top and a width of 80% of the page */
+.maintable
+{ border: none;
+  border-spacing: 0px;
+  margin: 25px auto 0px auto;
+  width: 80%;
+}
+
+
+
+/* this is the css for the table header for the class maintable, the text is allgned to the center with padding at the top and bottom as 15px, text color is black and size at 18pt. It has no border and a different background colour */
+.maintable th
+{ background-color: #909090;
+  font-size: 18pt;
+  color: black;
+  border: none;
+  padding-top:  15px;
+  padding-bottom:  15px;
+  border-bottom: 2px solid black;
+  text-align: center;
+}
+
+
+
+/* css for the maintable data. It has a differnt background colour from the header and padding to the top and right of 13px and 12px.  */
+.maintable td
+{ background-color:  #D0D0D0 ;
+  padding: 13px 12px;
+  border-bottom: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+
+
+/* This class was set to give specific rows on the table different background colours */
+tr.even td
+{ background-color: #B0B0B0 ;
+}
+
+
+
+/* This was set to show a different color on the table row whenever the mouse hovers over it */
+tr:hover td, tr.even:hover td
+{ background-color: #E8E8E8 ;
+}
+/*The css maintable command ends here*/
+
+
+
+
+/* floatright is used for the pictures in products page and subpages. borders of 1px has been set around the pictures with margins of 10px each at the bottom and left of the pictures. The padding code is irrelevant because its set to 0px, however, the is there to provide flexibility incase padding wants to be added. */
+.floatright { float: right; 
+  margin: 0 0 10px 10px;
+  border: 1px solid #666;
+  padding: 0px;
+}
+
+
+
+/* floatright1 class is used for the image in the contact us page to position it on the right side of the page.*/
+.floatright1 { float: right; 
+}
+
+
+
+/*Below is the css for the table which is used as a navigation bar. This table is visible on all the pages of the website*/
+/* The linktable is borderless with no border spacing, its 170px wide with no padding and a margin of 10px on the right */
+.linktable
+{ border: none;
+  border-spacing: 0px;
+  margin: 0px 10px auto auto;
+  width: 170px;
+  padding: 0px;
+}
+
+
+
+/* The linktable header its own backgroung clour with paddings of 12px at the top, 8px at the bottom and 5px to the left. Fontsize of 18pt with the text alligned to the left. also has a border-bottom of 1px solid black*/
+.linktable th
+{ background-color: #909090 ;
+  
+  color: black;
+  border: none;
+  padding-top:  12px;
+  padding-bottom:  8px;
+  border-bottom: 1px solid black;
+  padding-left: 5px;
+  text-align:left;
+  font-size: 18pt;
+}
+
+
+
+/* The linktable data has a different background color, with paddings of 10px and 5px. Also it has a border-bottom of 1px solid black*/
+.linktable td
+{ background-color: #B0B0B0 ;
+  padding: 10px 5px;
+  border-bottom: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding-left: 5px;
+}
+
+
+
+/* the class linkeven was created for the submenu under products and services, it gives it a smaller size and ligher colour that differs it from the other rows on the table. It has padding of 5px and 3px at the top and right with a different background colour from the rest of the table. */
+tr.linkeven td
+{ background-color: #D0D0D0;
+  padding: 5px 3px;
+}
+
+
+
+/*  */
+tr:hover td, tr.linkeven:hover td
+{ background-color: #E8E8E8 ;
+}
+/*The css table command for linktable ends here*/
+
+
+
+
+/* */
+.hometable
+{ border: none;
+  border-spacing: 0px;
+  margin: auto auto auto auto;
+  /*width: 40%;*/
+  padding: 5px;
+}
+
+.hometable td
+{ background-color: #F0F0F0 ;
+  padding: 5px 5px;
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  
+}
+.hometable:hover td
+{ background-color: #F0F0F0;
+}
+
+
+
+
+
+
+/*        DIVS 1, 2, 3, 4, 6  is created to design the layout of the page    */
+
+/* subtitles */
+.d1
+{ background-color: #E8E8E8;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* linktable, navigation bar */
+.d2
+{ background-color: #F0F0F0;
+  width: 180px;
+  height: 800px;
+  float: left;
+}
+
+/* homepage middle */
+.d3
+{ background-color: #F0F0F0;
+  width: 600px;
+  height: 800px;
+  float: left;
+}
+
+/* homepage right */
+.d4
+{ background-color: #F0F0F0;
+  width: 218px;
+  height: 800px;
+  float: left;
+}
+
+
+
+/* contactus, product and subs, career, */
+.d6
+{ background-color: #F0F0F0;
+  width: 790px;
+  float: left;
+}
+
+
+
+/* d8 and d9 are the divs tags used to float the <ul> tags side by side on the home page */
+.d8
+{ background-color: #F0F0F0;
+  width: 250px;
+  float: left;
+  padding-left: 30px;
+}
+.d9
+{ background-color: #F0F0F0;
+  width: 280px;
+  float: left;
+}
+
+
+
